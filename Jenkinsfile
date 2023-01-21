@@ -13,7 +13,7 @@ pipeline {
 		}
         stage('SCM Checkout') {
             steps{
-            git branch: 'main', url: 'https://github.com/oayanda/Todo_App.git'
+            git branch: 'main', url: 'https://github.com/oayanda/Tool.git'
             }
         }
 
@@ -35,7 +35,7 @@ pipeline {
             steps {
                 script {
                     sh "sleep 60"
-                    sh "curl -I 54.209.4.85:8000"
+                    sh "curl -I 54.159.86.239:8000"
                 }
             }
         }
