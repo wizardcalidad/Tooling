@@ -35,7 +35,7 @@ pipeline {
             steps {
                 script {
                     sh "sleep 10"
-                    sh "curl -I 54.147.235.70:8000"
+                    sh "curl -I http://54.147.235.70:8000"
                 }
             }
         }
