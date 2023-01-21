@@ -62,7 +62,7 @@ pipeline {
 			}
 		}
       
-      tage ('logout Docker') {
+      stage ('logout Docker') {
             steps {
                 script {
                     sh " docker logout"
