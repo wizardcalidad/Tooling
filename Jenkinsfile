@@ -26,7 +26,7 @@ pipeline {
        stage('Creating docker container') {
             steps {
                 script {
-                    sh " docker run -d --name todo-app -p 8000:8000 oayanda/todo:$GIT_BRANCH-0.0.$BUILD_NUMBER"
+                    sh " docker-compose -f tooling.yaml  up -d "
                 }
             }
         }
