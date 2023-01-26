@@ -6,7 +6,7 @@ services:
       - "5000:80"
     volumes:
       - tooling_frontend:/var/www/html
-    links:
+    depends_on:
       - db
 
   db:
@@ -19,6 +19,7 @@ services:
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - db:/var/lib/mysql
+      - ./html/tooling_db_schema.sql:/docker-entrypoint-initdb.d/tooling_db_schema.sql
 
 volumes:
   tooling_frontend:
