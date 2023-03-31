@@ -2,7 +2,7 @@ FROM php:7-apache
 
 
 ENV MYSQL_IP=localhost
-ENV MYSQL_USER=oayanda
+ENV MYSQL_USER=wizardCalidad
 ENV MYSQL_PASS=password
 ENV MYSQL_DBNAME=toolingdb
 
